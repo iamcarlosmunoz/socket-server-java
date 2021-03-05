@@ -22,12 +22,12 @@ public class Server {
     try {
       // Created socket on port 5000
       serverSocket = new ServerSocket(PORT);
-      System.out.println("\nServidor escuchando en el puerto " + PORT);
+      System.out.println("\nServer listening on port " + PORT + "\n");
 
       // listening to clients
       while (true) {
         clientSocket = serverSocket.accept();
-        System.out.println("Cliente conectado");
+        System.out.println("Client connected: " + clientSocket.getLocalAddress());
 
         in = new DataInputStream(clientSocket.getInputStream());
         out = new DataOutputStream(clientSocket.getOutputStream());
@@ -39,15 +39,25 @@ public class Server {
           // Send status to client
           out.writeInt(OK);
           // Send decimal to client
-          out.writeInt(calculateDecimal(number));
+          int decimal = calculateDecimal(number);
+          out.writeInt(decimal);
+
+          // Print numbers
+          System.out.println("Status Code: " + OK + " OK");
+          System.out.println("Number Received: " + number);
+          System.out.println("Number Sent: " + decimal);
         } else {
           // Send status to client
           out.writeInt(NOT_BINARY);
+
+          // Print Error
+          System.out.println("Status Code: " + NOT_BINARY + " NOT_BINARY");
+          System.out.println("Number Received: " + number);
         }
 
         // Close client connection
         clientSocket.close();
-        System.out.println("Cliente desconectado");
+        System.out.println("Client disconnected\n");
 
       }
     } catch (IOException ex) {
