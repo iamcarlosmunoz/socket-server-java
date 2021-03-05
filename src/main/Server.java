@@ -20,12 +20,12 @@ public class Server {
     try {
       // Created socket on port 5000
       serverSocket = new ServerSocket(PORT);
-      System.out.println("\nServidor escuchando en el puerto " + PORT);
+      System.out.println("\nServer listening on port " + PORT);
 
       // listening to clients
       while (true) {
         clientSocket = serverSocket.accept();
-        System.out.println("Cliente conectado");
+        System.out.println("Client connected");
 
         in = new DataInputStream(clientSocket.getInputStream());
         out = new DataOutputStream(clientSocket.getOutputStream());
@@ -39,7 +39,7 @@ public class Server {
 
         // Close client connection
         clientSocket.close();
-        System.out.println("Cliente desconectado");
+        System.out.println("Client disconnected");
 
       }
     } catch (IOException ex) {
