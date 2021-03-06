@@ -1,7 +1,7 @@
-# socket-server-java
-Java Socket programming is used for communication between the applications running on different JRE.
+# Servidor con Sockets
+La programación de Java Socket se utiliza para la comunicación entre las aplicaciones que se ejecutan en diferentes JRE.
 
-### [**1. Convert binary numbers**](https://github.com/iamcarlosmunoz/socket-server-java/tree/binary)
-Write a program that allows the client to type a string of ones and zeros (that is, a number in binary representation), then send it to the server and it returns the corresponding decimal value.
+### [**1. Convertir números binarios**](https://github.com/iamcarlosmunoz/socket-server-java/tree/binary)
+Escriba un programa que le permita al cliente escribir una cadena de unos y ceros (es decir, un número en representación binaria), luego envíelo al servidor y devuelve el valor decimal correspondiente.
 
-### **2. Calculate the check digit in an ISBN**
+### **2. Calcule el dígito de control en un ISBN**
