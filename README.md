@@ -11,7 +11,7 @@ The format of a 10-digit ISBN code is as follows:
 For example, the ISBN code for a certain book is 0675209935. The character or check digit (5 in the example) is obtained in two steps:
 
   1. Each digit is multiplied by the index corresponding to its position, and the resulting numbers are added. In the example:
-  ![example_01](https://www.virtualunimayor.edu.co/virtualidad/pluginfile.php/37451/mod_assign/intro/calculoISBN.PNG)
+     ![image](https://raw.githubusercontent.com/iamcarlosmunoz/socket-server-java/isbn-code/img/calculoISBN.PNG)
   2. The sum is divided by 11, and the remainder is taken as a check digit, taking into account that if the remainder is 10, the character X is used as a check character. In the example, the remainder of the integer division of 225 by 11 is 5, which is the check digit.
 
 **The program should do the following:** 
