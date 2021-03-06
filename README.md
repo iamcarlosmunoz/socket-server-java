@@ -1,4 +1,4 @@
-# Servidor con Sockets
+# Sockets TCP/IP
 La programación de Java Socket se utiliza para la comunicación entre las aplicaciones que se ejecutan en diferentes JRE.
 
 ### [**1. Convertir números binarios**](https://github.com/iamcarlosmunoz/socket-server-java/tree/binary)
