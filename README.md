@@ -11,6 +11,7 @@ El formato de un código ISBN de 10 dígitos es el siguiente:
 Por ejemplo, el código ISBN de un libro determinado es 0675209935. El carácter o dígito de control (5 en el ejemplo) se obtiene en dos pasos:
 
   1. Cada dígito se multiplica por el índice correspondiente a su posición y se suman los números resultantes. En el ejemplo:
+      <br>
      ![image](https://raw.githubusercontent.com/iamcarlosmunoz/socket-server-java/isbn-code/img/calculoISBN.PNG)
   2. La suma se divide por 11 y el resto se toma como dígito de control, teniendo en cuenta que si el resto es 10, se usa el carácter X como carácter de control. En el ejemplo, el resto de la división entera de 225 por 11 es 5, que es el dígito de control.
 
